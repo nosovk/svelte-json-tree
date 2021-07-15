@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Svelte JSON Viewer Component",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "svelte": "src/Root.svelte",
   "author": "Tan Li Hau <lhtan93@gmail.com>",
   "license": "MIT",
@@ -22,11 +23,14 @@
     "build-website": "rollup -c rollup-docs.config.js"
   },
   "devDependencies": {
-    "rollup": "^1.27.14",
-    "rollup-plugin-commonjs": "^10.1.0",
-    "rollup-plugin-node-resolve": "^5.2.0",
-    "rollup-plugin-svelte": "^5.1.1",
-    "rollup-plugin-terser": "^5.1.3",
-    "svelte": "3.16.7"
-  }
+    "@rollup/plugin-commonjs": "^19.0.1",
+    "@rollup/plugin-node-resolve": "^13.0.1",
+    "rollup": "^2.53.2",
+    "rollup-plugin-svelte": "^7.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "svelte": "^3.38.3"
+  },
+  "files": [
+    "dist"
+  ]
 }
